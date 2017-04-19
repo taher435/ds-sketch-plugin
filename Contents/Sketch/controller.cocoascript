@@ -1,0 +1,15 @@
+@import "library/MochaJSDelegate.js"
+@import "library/common.js"
+
+function commandHistory(context){
+  GH.init(context, "history");
+}
+
+function commandSave(context){
+  GH.init(context, "save");
+}
+
+function commandSync(context){
+  var doc = context.document;
+  doc.showMessage("Design synced with master");
+}

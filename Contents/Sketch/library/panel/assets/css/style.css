@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Overpass";
+  font-size: 16px;
+  font-weight: 400;
+  src: url("../fonts/overpass.woff") format('woff');
+}
+body{
+  font-family: 'Overpass', sans-serif;
+}
+table.versions{
+  width: 100%;
+  color: #FFFFFF;
+}
+table.versions tr th, table.versions  tr td{
+  text-align: left;
+}
+table.versions tr th{
+  font-size: 18px;
+  font-weight: 600;
+}
+table.versions tr td{
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Save - GitHip</title>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="row">
+      <form id="frmSave" name="frmSave">
+        <div>
+          <textarea id="txtComment" name="txtComment" rows="2" placeholder="Comment"></textarea>
+        </div>
+        <div>
+            <button type="button" onclick="saveVersion();">
+              Save
+            </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script type="text/javascript">
+    // window.onfocus = function(){
+    //     SMAction('focus');
+    // };
+
+    function saveVersion(){
+      var commitMessage = document.getElementById("txtComment").value;
+      SMAction('submit', {"message": commitMessage});
+    }
+  </script>
+</html>

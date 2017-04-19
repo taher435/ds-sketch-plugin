@@ -1,0 +1,33 @@
+{
+  "author" : "",
+  "commands" : [
+    {
+      "script" : "controller.cocoascript",
+      "name" : "Sync",
+      "shortcut": "ctrl alt s",
+      "handler": "commandSync",
+      "identifier" : "commandSync"
+    },
+    {
+      "script" : "controller.cocoascript",
+      "name" : "History",
+      "shortcut": "ctrl alt h",
+      "handler": "commandHistory",
+      "identifier" : "commandHistory"
+    }
+  ],
+  "menu" : {
+    "isRoot": false,
+    "title" : "Design Sync",
+    "items" : [
+      "commandSync",
+      "-",
+      "commandHistory"
+    ]
+  },
+  "identifier" : "io.designsync.sketch",
+  "version" : "0.1",
+  "description" : "Save your change history and sync design with team members.",
+  "authorEmail" : "hello@designsync.io",
+  "name" : "Design Sync"
+}

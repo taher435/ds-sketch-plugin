@@ -1,0 +1,4 @@
+var onRun = function(context) {
+  var doc = context.document;
+  doc.showMessage("I will sync");
+};
